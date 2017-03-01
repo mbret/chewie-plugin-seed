@@ -5,7 +5,8 @@ module.exports = {
      * @param helper
      * @param done
      */
-    mount: function(helper, done) {
+    mount: function(chewie, helper, done) {
+        this.chewie = chewie;
         this.helper = helper;
         return done();
     },
