@@ -30,19 +30,19 @@
     "modules": [
       {
         "id": "printDate",
-        "module": "./src/task-print-date.js",
+        "module": "./src/task-print-date-module.js",
         "name": "Print the date to the console",
         "type": "task"
       },
       {
-        "id": "timeout",
-        "module": "./src/trigger-timeout.js",
-        "name": "Wait for",
+        "id": "interval",
+        "module": "./src/trigger-interval-module.js",
+        "name": "Run at interval",
         "type": "trigger",
         "optionsConfig": [
           {
-            "name": "timeout",
-            "label": "Timeout",
+            "name": "interval",
+            "label": "Interval",
             "type": "text",
             "required": true
           }

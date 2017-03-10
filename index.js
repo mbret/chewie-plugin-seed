@@ -9,10 +9,9 @@ class Plugin {
      * in plugins. Ex: logger with your namespace set automatically.
      */
     constructor(chewie, helper) {
-        console.log("ici");
         // as the plugin instance is passed to each modules it could be useful to
         // keep access to chewie instance.
-        this._chewie = chewie;
+        this.chewie = chewie;
         // like chewie, it may be useful to have access to helper inside the modules
         this.helper = helper;
     }
@@ -35,10 +34,6 @@ class Plugin {
      */
     unmount(done) {
         done();
-    }
-
-    get chewie() {
-        return this._chewie;
     }
 }
 

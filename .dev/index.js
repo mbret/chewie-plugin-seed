@@ -12,7 +12,7 @@ chewie.start({
         // Here you are using a custom bootstrap. The custom bootstrap is ran after the system bootstrap. You can set up some tasks before
         // the system is ready.
         bootstrap: function(chewie, done) {
-            // this method will automatically reinstall your plugin (delete and then save).
+            // this method will automatically reinstall your plugin (delete if needed and then saved).
             // Since the plugin is installed at startup it will automatically be mounted.
             chewie.repositoriesHelper.reinstallPluginFromDisk(__dirname + "/..")
                 .then(() => done())
